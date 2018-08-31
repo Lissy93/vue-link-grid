@@ -1,6 +1,13 @@
+
 <template>
   <div id="app">
-    <TileSection tileSectionTitle="section title" tileSectionSubTitle="demo subtitle"/>
+    <TileSection 
+      v-for="(section, sectionIndex) in this.sections"
+      :key="sectionIndex" 
+      :tileSectionTitle="section.sectionTitle" 
+      :tileSectionSubTitle="section.sectionSubTitle" 
+      :tiles = "section.tiles"
+    />
   </div>
 </template>
 
@@ -9,6 +16,39 @@ import { Component, Vue } from 'vue-property-decorator';
 import TileSection from './components/TileSection.vue';
 
 @Component({
+  data: () => {
+    return  {
+    sections: [
+      {
+        sectionTitle: 'Title',
+        sectionSubTitle: 'SubTitle',
+        tiles: [
+        {
+          id: 0,
+          name: 'tile1',
+          description: 'description of first tile',
+          url: 'https://google.com',
+          icon: 'https://via.placeholder.com/100x100',
+        },
+        {
+          id: 1,
+          name: 'tile TWO',
+          description: 'description of first tile',
+          url: 'https://google.com',
+          icon: 'https://via.placeholder.com/100x100',
+        },
+        {
+          id: 2,
+          name: 'tile three',
+          description: 'description of first tile',
+          url: 'https://google.com',
+          icon: '',
+          },
+        ],
+      },
+    ],
+  };
+  },
   components: {
     TileSection,
   },
