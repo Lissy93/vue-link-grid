@@ -16,16 +16,6 @@ export default class Tile extends Vue {
     @Prop() private description?: string;
     @Prop() private url?: string;
     @Prop() private icon?: string;
-
 }
+
 </script>
-
-<style scoped lang="scss">
-
-    a {
-        border: 2px solid black;
-        width: 150px;
-        
-    }
-
-</style>

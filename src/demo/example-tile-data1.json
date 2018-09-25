@@ -1,0 +1,31 @@
+{
+    "sections": [
+        {
+            "sectionTitle": "Title",
+            "sectionSubTitle": "SubTitle",
+            "tiles": [
+                {
+                    "id": "0",
+                    "name": "tile1",
+                    "description": "description of first tile",
+                    "url": "https://google.com",
+                    "icon": "https://via.placeholder.com/100x100"
+                },
+                {
+                    "id": "1",
+                    "name": "tile TWO",
+                    "description": "description of first tile",
+                    "url": "https://google.com",
+                    "icon": "https://via.placeholder.com/100x100"
+                },
+                {
+                    "id": "2",
+                    "name": "tile three",
+                    "description": "description of first tile",
+                    "url": "https://google.com",
+                    "icon": ""
+                }
+            ]
+        }
+    ]
+}
