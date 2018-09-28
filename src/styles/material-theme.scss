@@ -1,3 +1,13 @@
-.theme-material{
+.material-section-theme{
     background: yellow;
+
+    h2{
+        color: red !important;
+    }
+}
+
+.tile-wraper{
+    background: blue !important;
+
+    a{ color: orange !important; }
 }

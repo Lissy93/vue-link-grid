@@ -1,17 +1,19 @@
 <template>
-  <section :style="sectionStyles" :class="'theme-'+theme">
-    <header>
+  <section :style="sectionStyles" :class="`${theme}-section-theme`">
+    <header class="tile-section-header">
         <h2 :v-if="tileSectionTitle">{{ tileSectionTitle }}</h2>
         <span :v-if="tileSectionSubTitle"> {{ tileSectionSubTitle }} </span>
     </header>
-    <div>
-        <Tile 
+    <div class="tile-wraper">
+        <Tile
+            class="tile-outer"
             v-for="tile in this.tiles" 
             :key="tile.id"
             :name="tile.name"
             :description="tile.description"
             :url="tile.url"
             :icon="tile.icon"
+            :theme="theme"
         />
     </div>
   </section>
@@ -44,15 +46,20 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="scss" type="text/scss">
 
     /* Default styles */
-
-    /* Import all the individual theme sets */
-    @import url('../styles/material-theme.scss');
-    @import url('../styles/material-dark-theme.scss');
+    .tile-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        .tile-outer {
+            flex: 1;
+        }
+    }
 
 </style>
+
+<style src="../styles/index.scss" lang="scss" />
 
 
 
