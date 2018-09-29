@@ -1,10 +1,8 @@
-/********************************************\
-|* The below template shows all the classes *|
-|* which can have styles applied to them    *|
-\********************************************/
 
 /* The specified tile section */
-.tile-section.NAME-OF-THEME-theme{
+.tile-section.default-theme{
+    font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+    color: #444;
 
     /* Heading and sub-heading of tile section */
     header.tile-section-header{
@@ -20,14 +18,24 @@
     /* Wrapper for the tiles */
     .tile-wraper{
         a.tile{
+
+            border: 1px solid #444;
+            border-radius: 3px;
+
+            &:hover{
+                background: #e8e8e8;
+            }
+
             /* Image/ icon within a tile */
             img.tile-icon{
 
             }
             /* Tile name, and description text */
             .tile-texts{
+                color: #000;
                 .tile-name{
-
+                    font-weight: bold;
+                    text-transform: capitalize;
                 }
                 .tile-description{
 

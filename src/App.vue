@@ -8,7 +8,7 @@
       :tileSectionSubTitle="section.sectionSubTitle"
       :styles="myStyle"
       :tiles = "section.tiles"
-      theme="material"
+      theme="default"
     />
   </div>
 </template>

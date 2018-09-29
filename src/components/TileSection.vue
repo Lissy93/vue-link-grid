@@ -1,12 +1,11 @@
 <template>
-  <section :style="sectionStyles" :class="`${theme}-section-theme`">
+  <section :style="sectionStyles" :class="`${theme}-theme tile-section`">
     <header class="tile-section-header">
-        <h2 :v-if="tileSectionTitle">{{ tileSectionTitle }}</h2>
-        <span :v-if="tileSectionSubTitle"> {{ tileSectionSubTitle }} </span>
+        <h2 class="tile-section-title" :v-if="tileSectionTitle">{{ tileSectionTitle }}</h2>
+        <span class="tile-section-sub-title" :v-if="tileSectionSubTitle"> {{ tileSectionSubTitle }} </span>
     </header>
     <div class="tile-wraper">
         <Tile
-            class="tile-outer"
             v-for="tile in this.tiles" 
             :key="tile.id"
             :name="tile.name"
@@ -49,14 +48,16 @@
 <style scoped lang="scss" type="text/scss">
 
     /* Default styles */
-    .tile-wraper{
-        display: flex;
-        flex-wrap: wrap;
-        .tile-outer {
-            flex: 1;
+    .tile-section{
+        padding: 1em;
+        .tile-section-header{
+            margin: 1em;
+        }
+        .tile-wraper{
+            display: flex;
+            flex-wrap: wrap;
         }
     }
-
 </style>
 
 <style src="../styles/index.scss" lang="scss" />
