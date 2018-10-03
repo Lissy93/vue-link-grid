@@ -32,7 +32,7 @@
         a.tile{
 
             border-radius: 4px;
-            background: grey;
+            background: #929292;
             overflow: hidden;
 
             transition: all 0.1s ease;
@@ -52,7 +52,7 @@
             /* Tile name, and description text */
             .tile-texts{
 
-                color: #929292;
+                color: #FFF;
 
                 .tile-name{
 
