@@ -1,0 +1,66 @@
+/*************************************\
+|* Pink and dark blue material theme *|
+\*************************************/
+
+/* The specified tile section */
+.tile-section.soft-theme{
+
+    background: #2c3e50;
+    color: #ee6e73;
+
+    /* Heading and sub-heading of tile section */
+    header.tile-section-header{
+        box-shadow: none;
+        display: block;
+
+        h2, span{
+            display: block;
+            text-align: left;
+            margin: 0.2rem;
+        }
+
+        h2.tile-section-title{
+            font-size: 1.8rem;
+        }
+        span.tile-section-sub-title{
+
+        }
+    }
+
+    /* Wrapper for the tiles */
+    .tile-wraper{
+        a.tile{
+
+            border-radius: 4px;
+            background: grey;
+            overflow: hidden;
+
+            transition: all 0.1s ease;
+
+            -webkit-box-shadow: 9px 10px 45px -8px rgba(0,0,0,0.8);
+            -moz-box-shadow: 9px 10px 45px -8px rgba(0,0,0,0.8);
+            box-shadow: 9px 10px 45px -8px rgba(0,0,0,0.8);
+
+            &:hover{
+                box-shadow: 9px 10px 45px -1px rgba(0,0,0,0.6);
+            }
+
+            /* Image/ icon within a tile */
+            img.tile-icon{
+
+            }
+            /* Tile name, and description text */
+            .tile-texts{
+
+                color: #929292;
+
+                .tile-name{
+
+                }
+                .tile-description{
+
+                }
+            }
+        }
+    }
+}
