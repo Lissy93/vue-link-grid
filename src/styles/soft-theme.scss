@@ -12,6 +12,7 @@
     header.tile-section-header{
         box-shadow: none;
         display: block;
+        margin: 0 1em;
 
         h2, span{
             display: block;
@@ -30,6 +31,8 @@
     /* Wrapper for the tiles */
     .tile-wraper{
         a.tile{
+
+            width: 24em;
 
             border-radius: 4px;
             background: #929292;

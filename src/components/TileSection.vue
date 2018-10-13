@@ -9,6 +9,7 @@
             v-for="tile in this.tiles" 
             :key="tile.id"
             :name="tile.name"
+            :color="tile.color"
             :description="tile.description"
             :url="tile.url"
             :icon="tile.icon"

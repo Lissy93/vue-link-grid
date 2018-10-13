@@ -1,5 +1,5 @@
 <template>
-    <a :href="url" target="_blank" class="tile"> 
+    <a :href="url" target="_blank" class="tile" v-bind:style= "[color ? {'background': color} : {}]"> 
         <img v-if="icon" :src="icon" alt="Icon" class="tile-icon">
         <div class="tile-texts">
             <span class="tile-name">{{ name }}</span>
@@ -16,6 +16,7 @@ export default class Tile extends Vue {
 
     @Prop() private id!: number;
     @Prop() private name!: string;
+    @Prop() private color?: string;
     @Prop() private description?: string;
     @Prop() private url?: string;
     @Prop() private icon?: string;
