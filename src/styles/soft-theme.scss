@@ -21,18 +21,41 @@
         }
 
         h2.tile-section-title{
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
         span.tile-section-sub-title{
-
+            font-size: 1.5em;
         }
     }
 
     /* Wrapper for the tiles */
     .tile-wraper{
+
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        margin: 2em 0;
+        
+        @media (max-width: 1024px) {
+            flex-flow: column;
+            display: block;
+        }
+
         a.tile{
 
-            width: 24em;
+
+            @media (max-width: 1024px) {
+                width: 70%;
+                margin: 1em auto;
+            }
+
+            
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            flex-grow: 1;
+            flex-basis: 0;
 
             border-radius: 4px;
             background: #929292;
@@ -40,7 +63,7 @@
 
             transition: all 0.1s ease;
 
-            -webkit-box-shadow: 9px 10px 45px -8px rgba(0,0,0,0.8);
+            -webkit-box-shadow: 9px 10px 45px - 8px rgba(0,0,0,0.8);
             -moz-box-shadow: 9px 10px 45px -8px rgba(0,0,0,0.8);
             box-shadow: 9px 10px 45px -8px rgba(0,0,0,0.8);
 
@@ -50,7 +73,7 @@
 
             /* Image/ icon within a tile */
             img.tile-icon{
-
+                width: 150px;
             }
             /* Tile name, and description text */
             .tile-texts{
@@ -58,10 +81,13 @@
                 color: #FFF;
 
                 .tile-name{
+                    font-size: 1.5em;
+                    font-family: 'Dosis', sans-serif;
+                    font-weight: 500;
 
                 }
                 .tile-description{
-
+                    font-size: 1em;
                 }
             }
         }
