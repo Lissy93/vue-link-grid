@@ -12,6 +12,7 @@
             :color="tile.color"
             :description="tile.description"
             :url="tile.url"
+            :path="tile.path"
             :icon="tile.icon"
             :theme="theme"
         />
