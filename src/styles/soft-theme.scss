@@ -43,6 +43,7 @@
 
         .tile{
 
+
             @media (max-width: 1024px) {
                 width: 70%;
                 margin: 1em auto;
@@ -68,7 +69,6 @@
 
             &:hover{
                 box-shadow: 9px 10px 45px -1px rgba(0,0,0,0.6);
-                opacity: 0.95;
             }
 
             /* Image/ icon within a tile */
